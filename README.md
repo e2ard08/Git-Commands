@@ -45,6 +45,15 @@ to make changes , use add , commit and Push
 git config --list 
 ```
 
+## Gitconfig User 
+
+```
+git config user.name "Your name in GitHub"
+git config user.email "Your Email "
+
+```
+
+
 ## SSH Conection 
 
 Create your Key 
