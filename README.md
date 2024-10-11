@@ -56,8 +56,7 @@ ssh-keygen -t ed25519 -C "email@email.com" -f ~/.ssh/id_XXXX
 Configure the Config file or Create a new one 
 
 ```
-~/.ssh/config  or touch config
-vim config 
+Path --->  ~/.ssh/config  vim config 
 ```
 
 ```
@@ -67,7 +66,7 @@ Host github.com
     User git
     IdentityFile ~/.ssh/id_XXXX
 
-    ( save with :wq! )
+    ( ----> save with :wq! <----)
 ```
 Copy the Public Key and added into Github Settings > SSH Key 
 
