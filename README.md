@@ -18,12 +18,37 @@ to make changes , use add , commit and Push
  git commit -m "firts-comit"
 ``` 
  ```
- git push  ( send the changes to Github)
+ git push origin main or other branch ( push the changes to Github)
 ``` 
 ## Branches
 
+Create a new branch 
+```
+git branch "dev" or "prod" or "test" 
+
+```
+- Delete Local branch
+
+```
+git branch -d branch-name
+```
+
+- Force Delete Branch , use capital "B"
+```
+git branch -D branch-name
+
+```
+
+- Delete remote branch
+
+```
+git push origin --delete branch-name
+```
+
+
+
  ```
- git checkout
+ git checkout -b "dev"
  ``` 
 
 
@@ -47,11 +72,36 @@ git config --list
 
 ## Gitconfig User 
 
+user.name is not necessarily your GitHub user.
+
+- The value of user.name is the name you want to be associated with your commits in Git.
+- This is the name that will appear as the author when you commit to a Git repository.
+
+### Config for a specific Repo
 ```
-git config user.name "Your name in GitHub"
+git config user.name "Your Name"
 git config user.email "Your Email "
+```
+
+- Check your Config
+```
+git config --list
+```
+
+
+### Config for all your repos 
 
 ```
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
+- Check your Config
+
+```
+git config --global --list
+```
+
+Specific Repo
 
 
 ## SSH Conection 
